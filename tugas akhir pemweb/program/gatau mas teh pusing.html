@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H-Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        #myInput {
+          background-image: url('/css/searchicon.png');
+          background-position: 10px 12px;
+          background-repeat: no-repeat;
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+        }
+        
+        #myUL {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+          display: block
+        }
+        
+        #myUL li a:hover:not(.header) {
+          background-color: #eee;
+        }
+        </style>
+	<h1>H-Tools 
+        <form>
+           
+            
+    </h1>
+    <div class="home">
+        <a class="tombol home1" href="home.html">Home</a>
+        <a class="tombol home1" href="kontak.HTMl">CS</a>
+        <a class="tombol home1" href="aku.HTML">Profil Pembuat</a>
+        <a class="tombol home1" href="login.html">Log Out</a>
+
+    </div>
+    
+
+</head>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    
+<body>
+    
+    
+    <div class="badan">
+        
+        <h2>Produk</h2>
+        <div class="home">
+            <a>We can complete part of your home</a>
+            </div>
+    <ul id="myUL">
+        <div class="list-produk">
+            <img src="../gambar ta/almari.jpg" alt="Lemari Pakaian">
+ 
+            <h4><li><a href = "#">Almari</a></li></h4>
+            <h5>Rp 2.000.000,-</h5>
+			<a class="tombol tombol-detail" href="barang1.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/kasur.jpg" alt="kasur">
+ 
+            <h4><li><a href = "#">Kasur</a></li></h4>
+            <h5>Rp 3.000.000,-</h5>
+			<a class="tombol tombol-detail" href="barang2.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/oven.jpg" alt="open">
+ 
+            <h4><li><a href = "#">Oven</a></li></h4>
+            <h5>Rp 1.100.000,-</h5>
+			<a class="tombol tombol-detail" href="barang3.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/panci.jpg" alt="panci">
+ 
+            <h4><li><a href = "#">Set Panci</a></li></h4>
+            <h5>Rp 1.400.000,-</h5>
+			<a class="tombol tombol-detail" href="barang4.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/rak piring.png" alt="rak">
+ 
+            <h4><li><a href = "#">Rak piring</a></li></h4>
+            <h5>Rp 2.600.000,-</h5>
+			<a class="tombol tombol-detail" href="barang5.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/set meja.jpg" alt="meja">
+ 
+            <h4><li><a href = "#">Set meja kursi</a></li></h4>
+            <h5>Rp 2.100.000,-</h5>
+			<a class="tombol tombol-detail" href="barang6.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/speaker.jpg" alt="speaker">
+ 
+            <h4><li><a href = "#">Speaker</a></li></h4>
+            <h5>Rp 3.300.000,-</h5>
+			<a class="tombol tombol-detail" href="barang7.html">Details</a>
+		</div>
+        <div class="list-produk">
+            <img src="../gambar ta/tv.jpg" alt="tv">
+ 
+            <h4><li><a href = "#">Tv digital</
+                
+                a></li></h4>
+            <h5>Rp 5.100.000,-</h5>
+			<a class="tombol tombol-detail" href="barang8.html">Details</a>
+		</div>
+    </ul>
+    </div>
+        <p> <--Call Center H-Tools--> </p>
+        <p> <img src="../gambar ta/loka.jpg" alt="lokasi" width="32" height="32" ><i class="h2"></i>H-Tools, Semarang</p>
+        <p> <img src="../gambar ta/email.png" alt="mail" width="32" height="32"><i class="h2"></i>h-tools.cs@gmail.com</p>
+        <p> <img src="../gambar ta/tp.png" alt="telp" width="32" height="32"><i class="h2"></i>+024-2583-2573</p>
+        
+ </div>
+
+ <div class="home1">
+    <p>Copyright &copy; <a>H-Tools.Company</a>. All Rights Reserved</p>
+ </div>
+ 
+ </body>
+</html>
